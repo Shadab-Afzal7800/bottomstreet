@@ -6,7 +6,6 @@ import 'package:velocity_x/velocity_x.dart';
 import 'models/overview.dart';
 import 'models/performance.dart';
 
-
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
 
@@ -74,6 +73,7 @@ class _HomeViewState extends State<HomeView> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                'Overview'.text.xl2.bold.make(),
                 20.heightBox,
                 ListView.builder(
                     physics: const NeverScrollableScrollPhysics(),
